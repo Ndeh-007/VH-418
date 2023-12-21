@@ -1,0 +1,15 @@
+%% coding: utf-8
+[{release,"vc418_server","1.0.0","14.0.2",
+          [{kernel,"9.0.2","./lib/kernel-9.0.2"},
+           {stdlib,"5.0.2","./lib/stdlib-5.0.2"},
+           {crypto,"5.2","./lib/crypto-5.2"},
+           {cowlib,"2.11.0","./lib/cowlib-2.11.0"},
+           {asn1,"5.1","./lib/asn1-5.1"},
+           {public_key,"1.14","./lib/public_key-1.14"},
+           {ssl,"11.0.2","./lib/ssl-11.0.2"},
+           {ranch,"1.8.0","./lib/ranch-1.8.0"},
+           {cowboy,"2.9.0","./lib/cowboy-2.9.0"},
+           {jsone,"1.8.1","./lib/jsone-1.8.1"},
+           {vc418_server,"0.1.0","./lib/vc418_server-0.1.0"},
+           {sasl,"4.2.1","./lib/sasl-4.2.1"}],
+          permanent}].
