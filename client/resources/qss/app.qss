@@ -1,0 +1,277 @@
+QTableView {
+    background: white;
+    gridline-color: light_shade_rbg;
+    selection-background-color: primary_rbg;
+    border: 1px solid light_shade_rbg;
+}
+
+QHeaderView::section{
+    background-color: light_rbg;
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+QMenuBar#MenuBar{
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    background: light_tint_rbg;
+}
+
+QMenuBar::item {
+    padding: 5px 5px;
+    background: transparent;
+    border-radius: 0px;
+    color: dark_rbg;
+}
+
+QMenuBar::item:hover{
+    border: 1px solid secondary_shade_rbg;
+    background: secondary_shade_rbg;
+}
+
+QMenuBar::item:selected {
+    background: secondary_shade_rbg;
+}
+
+QMenuBar::item:pressed {
+    background: secondary_shade_rbg;
+}
+
+QMenu{
+    background-color: light_rbg;
+    padding: 3px;
+    border: 1px solid light_shade_rbg;
+}
+
+QMenu::item {
+    background-color: transparent;
+    color: dark_rbg;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 35px;
+}
+
+QMenu::item:hover {
+    background-color: secondary_tint_rbg;
+    border-color: secondary_shade_rbg;
+    color: dark_rbg;
+}
+
+QMenu::item:selected {
+    background-color: secondary_shade_rbg;
+    color: dark_rbg;
+}
+
+QMenu::item:disabled {
+    background-color: transparent;
+    color: light_shade_rbg;
+}
+
+QMenu::separator {
+    background: light_shade_rbg;
+    margin: 0;
+    height: 1px;
+}
+
+
+QLineEdit {
+    border: 1px solid light_shade_rbg;
+    padding: 3px;
+    border-radius: 2px;
+    background: light_rbg;
+}
+
+QLineEdit:focus {
+    border: 1px solid primary_rbg;
+}
+
+
+
+QComboBox {
+    border: 1px solid light_shade_rbg;
+    padding: 3px;
+    border-radius: 2px;
+    background: light_rbg;
+}
+
+QComboBox:focus {
+    border: 1px solid primary_rbg;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background:white;
+}
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: white;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(":resources/images/chevron-down.png");
+}
+
+
+QFrame#AppIconHolder{
+    padding: 5px 10px 5px 10px;
+}
+
+QFrame#SectionHeader{
+    background-color: light_rbg;
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-radius: 0px;
+}
+
+QLabel#SectionHeaderLabel{
+    font-weight: bold;
+    color: dark_tint_rbg;
+}
+
+QFrame#PropertiesExplorerView{
+    background-color: light_rbg;
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 0px 0px 1px 1px;
+}
+
+QFrame#ProgramsExplorerView{
+    background-color: light_rbg;
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+}
+
+QFrame#OutputExplorerView{
+    background-color: light_rbg;
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+}
+
+
+QFrame#PreviewExplorer{
+    background-color: light_rbg;
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px;
+}
+
+QTextEdit#outputTextArea{
+    border: 0px solid light_shade_rbg;
+}
+
+QSplitter::handle:horizontal {
+    background-color: light_tint_rbg;
+}
+
+QSplitter::handle:vertical {
+   background-color: light_tint_rbg;
+}
+
+QSplitter::handle:pressed {
+   background-color: light_tint_rbg;
+}
+
+QSplitter {
+   background-color: light_rbg;
+}
+
+
+QTabWidget#PreviewTabs::pane{
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-radius: 0px;
+}
+
+
+QTabBar::tab {
+    padding: 5px 7px;
+    min-width: 20ex;
+}
+
+QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 secondary_tint_rbg, stop: 0.4 secondary_tint_rbg,
+                                stop: 0.5 secondary_tint_rbg, stop: 1.0 secondary_tint_rbg);
+}
+
+QTabBar::tab:selected {
+    color: primary_rbg;
+    border-color: primary_rbg;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+
+QTabBar::tab:!selected {
+    color: dark_tint_rbg;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+}
+
+QTabBar::close-button {
+    image: url(":resources/images/close-medium.png");
+    subcontrol-position: right;
+}
+
+QTabBar::close-button:hover {
+    image: url(":resources/images/close-dark.png");
+    background: secondary_shade_rbg;
+}
+
+QLabel#PreviewExplorerPlaceholderLabel{
+    font-weight: bold;
+    font-size: 12px;
+    color: medium_shade_rbg
+}
+
+QLabel#PreviewExplorerPlaceholderLabelValue{
+    font-size: 12px;
+    color: medium_rbg
+}
+
+QLabel#ServerStatusLabel{
+    font-size: 10px;
+    color: medium_rbg
+}
+
+QFrame#StatusBarViewButton:hover{
+    border: 0px solid secondary_shade_rbg;
+    background: secondary_shade_rbg;
+}
+
+QFrame#TabControlToolbar{
+    border-color: light_shade_rbg;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-radius: 0px;
+}
+
+QLineEdit#framesInput{
+    background: white;
+}

@@ -1,0 +1,6 @@
+venv
+build
+dist
+test.py
+temp.py
+.idea

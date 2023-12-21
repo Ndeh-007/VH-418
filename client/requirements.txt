@@ -1,0 +1,8 @@
+PySide6
+PySideSix-Frameless-Window
+qtawesome
+numpy
+pandas
+PyOpenGL
+PyOpenGL_accelerate
+requests
